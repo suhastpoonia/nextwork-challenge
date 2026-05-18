@@ -168,9 +168,7 @@ Suhast (and the NextWork team)`,
     followUp: `T + 10 days -
 
 Share the repo on NextWork's Instagram/LinkedIn: 
-"Sarah went from 'can I put this on GitHub?' to a fully documented S3 project repo in a week. This is what learning by building looks like and that’s how we do it here!!"
-
-ADD LINK`,
+"Sarah went from 'can I put this on GitHub?' to a fully documented S3 project repo in a week. This is what learning by building looks like and that’s how we do it here!!"`,
   },
   {
     id: '1d',
@@ -268,7 +266,7 @@ Suhast (and the NextWork team)`,
     },
     followUp: `T + 10 min
 
-pin a comment with the link to the written guide so every future Windows viewer sees it immediately. This is "fix the system, not the ticket" and it's worth flagging in Part 5 as a thing we'd build into the operating rhythm.`,
+Pin a comment with the link to the written guide so every future Windows viewer sees it immediately.`,
   },
   {
     id: '1f',
@@ -299,7 +297,7 @@ Also make sure Ollama is listening on 0.0.0.0
 
 You can easily start it with OLLAMA_HOST=0.0.0.0 ollama serve.
 
-Then kubectl apply -f deployment.yaml and you should be good. If anything else gets weird, the Ask AI button inside the project knows your exact step. If you still run into anything, our discord community is faster than the NextWork team. We've got you 🚀`,
+Then kubectl apply -f deployment.yaml and you should be good. If anything else gets weird, the Ask AI button inside the project knows your exact step. If you still run into anything, this community is faster than the NextWork team. We've got you 🚀`,
     },
     instagram: {
       username: 'nextwork',
@@ -336,11 +334,11 @@ Suhast (and the NextWork team)`,
 ]
 
 export const part2Data = [
-  { id: '2a-short', title: 'Build Your First AI App in 60 Seconds', type: 'Short', aspect: '9/16', duration: '1:46', src: publicAsset('/media/2A-short.mp4'), poster: null, challenge: '2A' },
-  { id: '2a-long', title: 'Build a RAG-Powered AI Project on NextWork', type: 'YouTube', aspect: '16/9', duration: '3:30', src: publicAsset('/media/2A-long.mp4'), poster: null, challenge: '2A' },
-  { id: '2b-short', title: 'What is RAG? Explained in 45 Seconds', type: 'Short', aspect: '9/16', duration: '0:58', src: publicAsset('/media/2B-short.mp4'), poster: null, challenge: '2B' },
-  { id: '2b-long', title: 'RAG Explained: From Zero to Production', type: 'YouTube', aspect: '16/9', duration: '3:04', src: publicAsset('/media/2B-long.mp4'), poster: null, challenge: '2B' },
-  { id: '2c-viral', title: 'POV: You Just Ran Your First AI Model Locally', type: 'Short', aspect: '9/16', duration: '2:00', src: publicAsset('/media/2C.mp4'), poster: null, challenge: '2C' },
+  { id: '2a-short', label: '2A - Short Form', title: 'What is RAG? Explained in 45 Seconds', type: 'Short', aspect: '9/16', duration: '0:58', src: publicAsset('/media/2B-short.mp4'), poster: null, challenge: '2B' },
+  { id: '2a-long', label: '2A - Long Form', title: 'RAG Explained: From Zero to Production', type: 'YouTube', aspect: '16/9', duration: '3:04', src: publicAsset('/media/2B-long.mp4'), poster: null, challenge: '2B' },
+  { id: '2b-short', label: '2B - Short Form', title: 'Build Your First AI App in 60 Seconds', type: 'Short', aspect: '9/16', duration: '1:46', src: publicAsset('/media/2A-short.mp4'), poster: null, challenge: '2A' },
+  { id: '2b-long', label: '2B - Long Form', title: 'Build a RAG-Powered AI Project on NextWork', type: 'YouTube', aspect: '16/9', duration: '3:30', src: publicAsset('/media/2A-long.mp4'), poster: null, challenge: '2B' },
+  { id: '2c-viral', label: '2C - Freestyle', title: 'POV: You Just Ran Your First AI Model Locally', type: 'Short', aspect: '9/16', duration: '2:00', src: publicAsset('/media/2C.mp4'), poster: null, challenge: '2C' },
 ]
 
 export const part3LinkedIn = [
@@ -374,9 +372,9 @@ So proud of you. Keep going 🚀`,
     postSummary: 'Built a pipeline and simulated a CPU spike to test it.',
     avatarBg: '#D8D1C2',
     avatarLetter: 'S',
-    yourComment: `Sheetal, you didn't just build the pipeline, you simulated a CPU spike to watch it fire. That's the move that separates "I followed a tutorial" from "I'd hire this person tomorrow." 🙌
+    yourComment: `That is firee🔥, Sheetal. Love the way you constructed the entire workflow and glad to see you had a fun time pursuing the secret mission of adding custom application-level telemetry.
 
-So happy to have you in the NextWork family. Keep building 🚀`,
+You’ve been building a lot and we are here to celebrate it all 🚀`,
   },
   {
     id: 'jhonny',
@@ -390,35 +388,61 @@ You've been shipping consistently and we want you to know we see it. Keep going�
   },
 ]
 
+export const part3WhyNotes = [
+  {
+    name: 'Derrick',
+    note: 'Amber had already commented which meant the personal warmth was covered. So I wanted to write something that spoke to the actual project he shipped, and also doubled as an open invitation for anyone else reading who might be curious about coming to HQ.',
+  },
+  {
+    name: 'James',
+    note: 'His post had barely any engagement which felt wrong given how well he wrote it. I noticed his opening line was genuinely strong so I called it out specifically because I figured a real compliment about his writing would hit different than just praising the project itself.',
+  },
+  {
+    name: 'Sheetal',
+    note: 'Two people from the team had already commented on her post. I wanted the comment to make her feel proud of what she built, and the closing line of her post already told me exactly what skills she knew she had developed. The secret mission detail was my way of showing I actually went through her documentation, not just her LinkedIn post.',
+  },
+  {
+    name: 'Jhonny',
+    note: 'I saw he had shipped three builds with barely any recognition on any of them. The project felt secondary to that. I wanted to lead with the fact that we had noticed the pattern before saying anything about what he built, because that felt like the thing he actually needed to hear.',
+  },
+]
+
 export const part3NextSteps = {
   title: 'The Playbook: Make Sure No Learner Post Gets Ignored',
   intro: 'Love from peers > love from the company. The team\'s job isn\'t to be the love. The team\'s job is to route it from learners to learners AND fast.',
-  strategies: [
+  sections: [
     {
-      icon: '01',
-      title: 'The peer-to-peer engine',
-      desc: 'The #share-your-work channel becomes the heart of the system. If you drop your post here, you also drop love on at least 3 other posts in this channel.',
+      title: 'Peer Engine',
+      body: [
+        'Add a new channel to the Discord server. Right now, celebrations live inside Discord but don\'t reliably reach LinkedIn. We can fix that with a SIMPLE RULE.',
+        'When a learner posts their NextWork project on LinkedIn, they drop the link in a dedicated Discord channel (can name it #share-your-work). That channel has one rule pinned at the top: "If you drop your post here, you also drop love on at least 3 other posts in this channel. That\'s how we keep the energy going." This is the Pay-It-Forward rule. It\'s kinda reciprocal (learners agreeing among themselves). And it tries to solve the Jhonny problem.',
+        'But we gotta make sure this one rule is communicated everywhere. In the project guide, on the YouTube outro, in the welcome email. EVERYWHERE. Every time NextWork tells a learner to share their project, the same sentence appears: "Drop the link in #share-your-work and pay it forward to three other learners. That\'s the deal."',
+      ],
     },
     {
-      icon: '02',
       title: 'The activation layer',
-      desc: 'The "Builder of the Month" spotlight and merch as a thank-you note for people who show up most consistently for other learners.',
+      body: [
+        'The "Builder of the Month" spotlight - for those people who showed up most consistently for other learners that month. Featured in the email newsletter, on socials, MAYBEE with a short Q&A.',
+        'Merch as a thank-you note - send a NextWork hoodie to someone\'s door with a handwritten note: "You\'ve shown up for so many learners this month. Here’s a small thank you from our side."',
+      ],
     },
     {
-      icon: '03',
       title: 'Something the team can deliver',
-      desc: '0-engagement rescue, serial shipper acknowledgments, and pinned learner replies from the official NextWork LinkedIn.',
+      body: [
+        'The 0-engagement rescue - if a learner has tagged @NextWork and the post has under 5 reactions after 48 hours, it pings someone on the Front of House team. Then someone from the team writes one warm, specific comment, and drops the post in #share-your-work with a personal note ("Jhonny just shipped his third build, would love some love").',
+        'The serial shipper acknowledgment - once a learner ships their third project, an automated flag goes to the team. Someone writes a personal note: "We noticed you\'ve been here for three builds. We see you."',
+        'The pinned learner reply - each month, NextWork\'s official LinkedIn picks 1-2 learner posts and pins them on the company page or features them as a carousel. Not a lot like 10. Maybe just one or two, deeply. The pinned learner post sends a signal to every other learner: if you ship, you might be next.',
+      ],
     },
     {
-      icon: '04',
-      title: 'The wow moment beyond LinkedIn',
-      desc: 'A voice note from someone who has done the learner\'s job, a portfolio audit after 3+ projects, and a "Built with NextWork" yearbook.',
+      title: 'The "wow" moment',
+      body: [
+        'The "someone who\'s done your job" voice note - when a learner finishes 3 projects, the team sends them a 1-minute voice note (in Discord or by email) from someone who actually does that job. Like a real SA saying "I saw your ALZ build, this is what gave me my first Azure job, here\'s what to do next." This is to make sure we last longer in the learner\'s memory.',
+        'The portfolio audit - once a learner has shipped 3+ projects, the team offers a free 15-minute portfolio audit. Real, specific feedback from someone in the team OR industry on how their projects actually look to recruiters.',
+        '"Built with NextWork" yearbook - publish an end-of-year digital book featuring every learner project, organized by category. Anyone who shipped that year is in it. Sent to all learners. It celebrates everyone who shipped and makes everyone who didn\'t wish they had.',
+      ],
     },
   ],
-  wowMoment: {
-    title: 'The learner IS the marketing',
-    desc: 'When a learner feels seen by peers, the team, and someone further ahead in their path, the project stops being a post and becomes a memory.',
-  },
 }
 
 export const part4Video = {
@@ -430,31 +454,133 @@ export const part4Video = {
   poster: null,
 }
 
-export const part5Data = {
-  keeping: [
-    { stat: '240K', label: 'Vibe coder vs Senior Engineer', note: 'Proven Maximus format' },
-    { stat: '167K', label: 'ML Engineer vs AI Engineer', note: 'Career anxiety wins' },
-    { stat: '80.9K', label: 'RAG in 60sec', note: 'Simple concept, fast payoff' },
-  ],
-  keepDoing: [
-    { title: 'Maximus on camera, one concept, 60 seconds', why: 'This is the thing. The format is proven and I wouldn\'t change it.' },
-    { title: 'The System Design Interview series', why: 'It works because it hits career anxiety and real education at the same time. The series format makes people binge.' },
-    { title: 'Career development hooks over tutorial hooks', why: 'People don\'t wake up wanting to learn Docker. They wake up wanting to not feel behind. Career hooks win every single time by 3-5x.' },
-    { title: 'Cross-posting and daily cadence', why: 'Don\'t slow down.' },
-  ],
-  improve: [
-    { area: 'All Maximus', issue: 'He is incredible on camera but one face can\'t carry the jump from 200K to 1M forever.', fix: 'Add learner stories: real people talking about what they built and what happened after.' },
-    { area: 'YouTube long-form', issue: 'Project demos get 100-500 views. Two hour walkthroughs work as support material, not chosen entertainment.', fix: 'Make 15-20 minute learner panels, interviews, and Q&As, then cut them into 5-8 short clips.' },
-    { area: 'LinkedIn', issue: '181K on Instagram says the audience is older and career-focused. LinkedIn should be getting way more attention.', fix: 'Post daily learner wins, career stories, and what the team is building.' },
-    { area: 'Start path', issue: 'Video to profile to bio link to homepage to picking a project is too many steps.', fix: 'Every video names one specific project and the bio link goes directly to that project page.' },
-    { area: 'City events', issue: 'City events are free content that nobody is capturing.', fix: 'Every meetup produces 5-10 short clips with simple prompts like "what did you build today?"' },
-  ],
-  contentSystem: {
-    formats: ['Concept shorts, 4-5x per week', 'Learner stories, 2-3x per week', 'Community moments, 1-2x per week', 'Long-form conversations, 1x per week'],
-    cadence: 'Roughly 10-12 short-form pieces and 1 long-form per week. Doable for a small team because learner stories and event moments are mostly learner-generated or event-captured.',
-    metrics: ['Weekly: views by type, engagement rate, DMs, intent comments, learner story submissions', 'Monthly: signups with UTM tracking, projects started within 7 days, YouTube watch time, follower growth, learner posts tagged #NextWork'],
-    review: 'Every Monday: 30 min standup. What performed best and why. What flopped and why. What are we testing this week. One test per week, ship it, review next Monday, keep going.',
+export const part4Interactions = [
+  {
+    title: 'Interaction 1',
+    what: 'John is scrolling at 11pm. He sees a 40-second video. A guy who looks like he could be John\'s cousin is on camera saying "I\'m a warehouse manager. I\'ve never written code. I just built an AI agent that answers questions about our shipping documents. Took me 45 minutes. Here\'s what it looks like." Screen share. It works. The guy is genuinely surprised. He laughs. The caption says "If I can do this, you definitely can."',
+    how: 'Filming 5-10 learner stories per month. Just real people screen-sharing what they built and reacting to the fact that it works. I’d personally like to prioritize non-traditional backgrounds like chefs, teachers, warehouse managers, accountants.',
   },
+  {
+    title: 'Interaction 2',
+    what: 'John doesn\'t comment (he\'s shy). But he taps the NextWork profile. He sees more of the same - real people, real projects, real reactions. Not a content calendar of tips and tricks. A feed full of people who look like they could be his coworkers, building things he didn\'t know were possible. He taps the bio link.',
+    how: 'Redesign the Instagram/TikTok grid so the first 3 posts are learner faces and projects, not a concept explanation. I’d like to market NextWork as an experience and learners are the best way to show that.',
+  },
+  {
+    title: 'Interaction 3',
+    what: 'John lands on the page. Before he sees a single project, he sees faces. Real learners. Short quotes. "I\'m a teacher from Lagos. I built a RAG chatbot in 45 minutes." "I\'m a finance analyst from Manila. I automated my calendar with AI." "I\'m a chef from Austin. I shipped my first AI agent last week." Below the faces, one button: "Pick your first project." No sign-up wall. No email capture. No "choose your learning path" quiz.',
+    how: 'We have a lot of screenshots and all we have to do is embed some of those quotes on the hero page (people talking about us). Rotate them weekly.',
+  },
+  {
+    title: 'Interaction 4',
+    what: 'John picked "Run Ollama on Your Machine." He clicks start. Within 15 minutes, he has typed one command, Ollama is running, and his terminal says "The capital of France is Paris." He just ran AI on his own laptop. No API. No cloud. No cost. His laptop did that.',
+    how: 'Already built.',
+  },
+  {
+    title: 'Interaction 5',
+    what: 'John finishes the project. He filled in a few prompts along the way ("What did you build?" "What was the hardest part?"). Now the platform generates a one-page portfolio card. His name. His photo (or avatar if he\'s shy). The project title. A hero screenshot of his terminal working. Two short paragraphs summarizing what he built and what he learned. A clean visual design and not a wall of text, something he\'d actually be proud to share. It looks like a Dribbble shot, not a Google Doc.',
+    how: 'Adding a new template of the auto-generated documentation that looks like a visual portfolio card. One page. Hero image, name, title, two paragraphs max.',
+  },
+  {
+    title: 'Interaction 6',
+    what: 'John clicks "Share to LinkedIn." The post is pre-drafted with his project title, his portfolio card image already attached, and a personal hook ("I just built my first AI model. It runs entirely on my laptop. No code background, no API costs. Here\'s what I learned."). He tweaks it, adds his own voice, hits post. Within 2 hours, NextWork\'s account comments something short, warm, specific to him. Within 6 hours, 3-4 other learners from Discord\'s #share-your-work channel have liked and commented. By the time he checks his phone after dinner, his post has 8-12 engagements. He expected 0.',
+    how: 'The 0 engagement rescue system from 3b. NextWork\'s team comments within 2 hours (one person, one comment, specific). The Discord #share-your-work Pay-It-Forward rule drives peer engagement. The pre-attached image removes the friction that currently kills most learner shares.',
+  },
+  {
+    title: 'Interaction 7',
+    what: 'Someone from the NextWork team sends him a short message: "Hey John, saw your Ollama project. The fact that you did this with no coding background is exactly why we built NextWork. If you want to know what to build next, the AI Fundamentals roadmap is the move. We\'re here if you need anything."',
+    how: 'The Front of House automates sending 10-15 DMs per day to new learners who just shared their first project. Use their name, reference their specific project, suggest the next step. No template. 5-7 minutes of total team time per day.',
+  },
+  {
+    title: 'Interaction 8',
+    what: '3 days after his first project, John gets a message. Not "come back!" Not "you haven\'t logged in!" Something that connects what he already built to what he could build next: "Your Ollama model can answer general questions, but it doesn\'t know anything about YOUR work. Want to fix that? Build a RAG API and teach it your own documents."',
+    how: 'Project-specific follow-up emails triggered by completion. Not a generic "here are more projects" list. One email connected to what he just did and a suggestion for the next chapter.',
+  },
+  {
+    title: 'Interaction 9',
+    what: 'After his second project, John gets an invite: "Hey, there are 15 NextWork learners in Hyderabad. They meet every other Saturday at a coworking space. No agenda, just people building together. The next one is this weekend. Want to come?" He shows up. Someone says "oh, you did the RAG project too? I just finished that last week. Did you get the Ollama install error?" They laugh. They help each other. He’s part of the community now. For the shy version of John, the one who would never show up to an in-person event - the equivalent is a Discord channel where he lurks, watches others share wins, and one day quietly posts his own screenshot. Someone reacts with a 🚀. I guess that\'s enough. He\'s seen.',
+    how: 'City group leaders get notified when a new learner in their city completes a project. They send an invite personally to build a personalized recall value.',
+  },
+  {
+    title: 'Interaction 10',
+    what: '60 days in. John has shipped 4 projects. He sees a new learner in the Hyderabad group struggling with the Ollama install on Windows. He’s now replying with the fix. Then NextWork reaches out: "John, your journey from \'I\'ve never written code\' to 4 shipped projects in 60 days is exactly the kind of story other learners need to see. Would you be open to doing a 5-minute screen recording of your favorite project? We\'d feature it on our YouTube and other socials." He says yes. He records it. HIS FACE BECOMES THE PUSH FOR NEXT JOHN OUT THERE.',
+    how: 'As soon as any learner ships their 4th project, team reaches out with the recording invitation. Not every learner will say yes. But the ones who do become the content engine.',
+  },
+]
+
+export const part5Data = {
+  statCards: [
+    { stat: '240K', label: 'Vibe Coder vs Senior Engineer' },
+    { stat: '167K', label: 'ML Engineer vs AI Engineer' },
+    { stat: '80.9K', label: 'RAG in 60 seconds' },
+  ],
+  sections: [
+    {
+      title: 'What NextWork Is Already Doing Well',
+      paragraphs: [
+        'NextWork’s current social strategy engine says - Maximus on camera, one concept. 60 seconds. Cross-posted everywhere. That engine works. “Vibe Coder vs Senior Engineer” hit 240K. “ML Engineer vs AI Engineer” hit 167K. “RAG in 60 seconds” hit 80.9K. The reason this format works is not just that the topics are good. It works because the videos sit at the intersection of career anxiety and real education.',
+        'People do not only want to learn RAG. They want to stop feeling behind. That is the part NextWork already understands really well.',
+        'There are a few other things already working too. Events are becoming content. The BBQ at HQ, Build Day in Austin, the Manila event, all of that already gives people a sense that NextWork is not just an online project library. It is a real community with real people inside it.',
+        'Learner wins also get reshared. Amber, Maya, Maximus, and the team post personally, and those posts often feel more alive than the company page because they come from actual people, not a brand voice trying to sound human.',
+        'Keep the current engine, then add more ways for the community itself to carry the story.',
+      ],
+    },
+    {
+      title: 'What I’d Build On Top Of It',
+      paragraphs: [
+        'Maximus has a genuine point of view. He talks to the camera like a friend. He makes abstract tech feel like something you would actually want to learn. Those are not impossible-to-replicate traits. They are learnable patterns.',
+        'And NextWork already has the raw material for this inside the community. There are 200K learners around the brand. Some percentage of them are naturally good storytellers. Some are funny. Some are clear explainers. Some have interesting career pivots. Some are just early, honest, and relatable, which is sometimes even better.',
+        'Right now, the biggest opportunity is to turn more of those people into the content layer. Not in a polished, overproduced way. More like: “Here is someone who actually built something. Here is what they were confused about. Here is what clicked. Here is what changed after.” That kind of content connects Discord, social, events, and the product together.',
+      ],
+    },
+    {
+      title: 'The Learner Story Layer',
+      paragraphs: [
+        'When someone posts a NextWork project on LinkedIn, the post might get attention or it might disappear. That usually depends less on the quality of the work and more on whether the learner already has an audience.',
+        'I would not solve that by simply reposting more. I would build a lightweight learner interview pipeline. Every week, identify 2-3 learners who shipped something interesting. Get them on a 10-minute call. Record it. Ask three simple questions: what were you doing before NextWork, what did you build, and what happened after?',
+        'That call can become a 60-second short, a LinkedIn post, a quote card, a YouTube Short, and a community spotlight. This is where NextWork has a real advantage. The HQ, the events, the city groups, the build days, the Discord activity. There is already motion everywhere. The content does not need to be invented from scratch. It needs to be captured.',
+        'I would also do more behind-the-scenes content from HQ. Not overly polished. Just the real stuff. The chaos before an event. Someone packing merch. A whiteboard planning session. A team member reacting to a learner project. People like seeing what is happening behind the screen because it makes the company feel real.',
+      ],
+    },
+    {
+      title: 'The Visual Packaging Layer',
+      paragraphs: [
+        'NextWork already has a few visual modes: black, white, and the fun colorful style. That is good. I would just push it further. I’d want to start adding and rotating visual themes. Not because the brand changes, but because the feed needs new reasons to stop the scroll. The core can stay the same: educational, career-focused, project-based, human. But the packaging can rotate.',
+        'For example, portfolio reviews could have different themes. One week could feel like an anime power ranking. Another could feel like a hiring manager teardown. Another could feel like a “before and after” transformation. Even something like a Naruto-inspired portfolio review theme could work if it is done with taste and humor. The point is not to make things random. The point is to make the same educational engine feel fresh again and again.',
+      ],
+    },
+    {
+      title: 'Long-Form YouTube',
+      paragraphs: [
+        'For YouTube long-form, I would treat full videos as the deeper layer, not the first ask. If NextWork records a one-hour conversation with a learner who has been active in the community, I would not drop the full hour first and hope people watch. I would cut 5-8 short clips from that conversation and post them across Instagram, TikTok, YouTube Shorts, and LinkedIn first.',
+        'Then watch what people respond to. Which clip gets saved? Which one gets shared? Which comment section has people asking follow-up questions? Which story actually makes people curious? That becomes the vibe check.',
+        'This also makes long-form less risky. Every long conversation becomes multiple experiments before it becomes one big asset.',
+      ],
+    },
+  ],
+  pillars: [
+    {
+      title: 'Pillar 1: Character-Based Concept Shorts',
+      body: 'NextWork is already doing this well. I would keep the format and add more faces into it. Maximus should not have to carry every character-based short. People already see Amber, Maya, Natasha, John, and the team across different parts of the ecosystem. Some of them can start carrying these formats too. The format does not need to change much. One person, one sharp concept, one clear idea in under 60 seconds. Career comparisons, AI concepts, cloud ideas, system design, project explainers. The new layer is rotation: new faces, new visual themes, same clarity.',
+    },
+    {
+      title: 'Pillar 2: Learner Short Interviews',
+      body: 'Every week, 2-3 learners. Ten-minute recorded call. Cut it into 60 seconds. The learner is the content. The team is just helping package the story. This can work especially well because NextWork projects naturally create proof. People do not just say, “I learned cloud.” They can show the actual project, the portfolio doc, the GitHub repo, the LinkedIn post, the thing they built. That makes the story more believable.',
+    },
+    {
+      title: 'Pillar 3: Event And HQ Clips',
+      body: 'Every HQ event, Build Day, city meetup, or community gathering should produce 5-10 short clips. Questions like “What did you build today?”, “What got you stuck?”, “What made you come here?”, “What are you trying to get hired for?”, and “What would you tell someone who is nervous to start?” can be asked. Raw clips. 20-30 seconds. This is the kind of content competitors cannot easily copy because most of them do not have the in-person layer NextWork has.',
+    },
+    {
+      title: 'Pillar 4: Behind The Scenes',
+      body: 'I would make behind-the-scenes a real pillar, not just occasional filler. The HQ setup. The planning. The event prep. The team reacting to learner wins. The small chaotic moments before something ships. People like seeing how things are made. And when the team itself is part of the product experience, showing the team makes the brand feel closer. This does not need heavy production. It just needs consistency.',
+    },
+  ],
+  measurement: [
+    'I would keep the measurement simple enough that the team can actually use it every week.',
+    'On a weekly basis, I’d look at performance by pillar: which concept shorts, learner interviews, event clips, and behind-the-scenes posts got the most views, saves, shares, and comments. I’d pay special attention to DM shares on Instagram, because that usually means the video felt useful or relatable enough for someone to send to a friend. I’d also track comments that show intent, like “how do I start?” or “where is the project?”, plus how many learners are volunteering for interviews and how many usable clips each event produces.',
+    'Monthly, I’d connect the content back to the product. How many new signups came from social? How many of those people started a project within seven days? How many learner posts tagged NextWork on LinkedIn? For YouTube, I’d look at whether short clips are creating demand for the full conversation, instead of judging long-form videos in isolation.',
+    'Then every Monday, I’d run a 30-minute content review: what performed best, what underperformed, what people actually said in the comments, and what one test we’re shipping next. The goal is not to build a giant reporting system. The goal is to keep learning while the team keeps shipping.',
+  ],
   selfAssessment: {
     strong: ['It didn\'t seem like we were promoting something from the get go.', 'Using relatable and trendy topics to catch early attention of the user.'],
     improve: ['Dig deep into the concepts as the current NextWork socials already does.'],

@@ -199,7 +199,7 @@ export default function Part1() {
           num="01"
           label="Part 1"
           title="How I answer"
-          subtitle="Six real learner questions and four ways to answer them."
+          subtitle="Six real questions and 4 ways to answer them (with a follow-up prompt on a case by case basis). I also gave a name to each learner to make it sound more personalized."
         />
 
         <div>

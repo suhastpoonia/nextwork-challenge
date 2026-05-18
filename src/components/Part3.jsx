@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { ThumbsUp, MessageCircle, Repeat2, Send, Lightbulb } from 'lucide-react'
 import SectionHeader from './SectionHeader'
-import { part3LinkedIn, part3NextSteps } from '../data/content'
+import { part3LinkedIn, part3NextSteps, part3WhyNotes } from '../data/content'
 
 function NextWorkMark() {
   return (
@@ -121,33 +121,41 @@ function NextStepsBox() {
 
         <p className="font-body text-ink-400 text-sm leading-relaxed mb-7">{part3NextSteps.intro}</p>
 
-        <div className="grid grid-cols-2 gap-4 mb-8">
-          {part3NextSteps.strategies.map(({ icon, title, desc }) => (
+        <div className="grid gap-4">
+          {part3NextSteps.sections.map(({ title, body }) => (
             <div
               key={title}
-            className="rounded-lg border border-black/[0.08] bg-[#F8F6F0] p-4"
+              className="rounded-lg border border-black/[0.08] bg-[#F8F6F0] p-5"
             >
-              <div className="text-xl mb-2">{icon}</div>
-              <p className="font-heading font-semibold text-ink-100 text-sm mb-1.5">{title}</p>
-              <p className="font-body text-ink-400 text-[0.78rem] leading-relaxed">{desc}</p>
+              <p className="font-heading font-semibold text-ink-100 text-sm mb-3">{title}</p>
+              <div className="space-y-3">
+                {body.map((paragraph) => (
+                  <p key={paragraph} className="font-body text-ink-400 text-[0.82rem] leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </div>
           ))}
         </div>
-
-        {/* WOW moment */}
-        <div className="rounded-lg border border-black/10 bg-[#F8F6F0] p-5">
-          <p className="font-display text-[0.62rem] font-bold tracking-[0.2em] uppercase text-black/55 mb-2">
-            The WOW Moment
-          </p>
-          <p className="font-heading font-semibold text-ink-100 text-sm mb-2">
-            {part3NextSteps.wowMoment.title}
-          </p>
-          <p className="font-body text-ink-400 text-[0.82rem] leading-relaxed">
-            {part3NextSteps.wowMoment.desc}
-          </p>
-        </div>
       </div>
     </motion.div>
+  )
+}
+
+function WhyNotesBox() {
+  return (
+    <div className="mb-10 rounded-lg border border-black/10 bg-white p-8">
+      <h3 className="mb-5 font-display text-xl font-bold text-ink-100">Why I wrote these comments</h3>
+      <div className="grid gap-4">
+        {part3WhyNotes.map(({ name, note }) => (
+          <div key={name} className="rounded-lg border border-black/[0.08] bg-[#F8F6F0] p-5">
+            <p className="mb-2 font-heading text-sm font-semibold text-ink-100">{name}</p>
+            <p className="font-body text-[0.82rem] leading-relaxed text-ink-400">{note}</p>
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }
 
@@ -169,6 +177,7 @@ export default function Part3() {
           ))}
         </div>
 
+        <WhyNotesBox />
         <NextStepsBox />
       </div>
     </section>

@@ -4,6 +4,7 @@ import SectionHeader from './SectionHeader'
 import { part2Data } from '../data/content'
 
 function formatLabel(video) {
+  if (video.label) return video.label
   return `${video.challenge} - ${video.type === 'YouTube' ? 'Long form' : 'Short form'}`
 }
 
